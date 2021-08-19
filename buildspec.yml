@@ -12,7 +12,7 @@ phases:
     commands:
       - echo Build started on `date`
       - echo Building the Docker image...
-      - docker build -t code-build-test
+      - docker build -t Dockerfile
       - docker tag code-build-test:latest 022352218757.dkr.ecr.ap-northeast-1.amazonaws.com/code-build-test:latest
   post_build:
     commands:
